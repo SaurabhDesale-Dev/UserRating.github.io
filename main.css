@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+  width: 90%;
+  min-width: 240px;
+  max-width: 350px;
+  background-color: rgba(37, 45, 55, 0.6);
+  margin: auto;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 13px;
+}
+
+.circle-block {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(124, 135, 152, 0.2);
+}
+
+.card__title {
+  color: hsl(0, 0%, 100%);
+  margin-top: 1.2rem;
+}
+
+.card__p {
+  color: hsl(217, 12%, 63%);
+  margin-top: 1.2rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.btn-rating {
+  color: hsl(217, 12%, 63%);
+}
+
+.btn-rating:hover,
+.btn-rating:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.btn-submit {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background-color: hsl(25, 97%, 53%);
+  padding: 0.8rem 0;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+/* ********* CARD STATE TWO ********** */
+
+.card-state-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  padding-top: 1.2rem;
+}
+
+.result {
+  font-weight: 400;
+  color: hsl(25, 97%, 53%);
+  background-color: rgba(124, 135, 152, 0.2);
+  margin-top: 1.7rem;
+  margin-bottom: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+}
+
+.title--thank {
+  font-size: 1.5rem;
+}
+
+.p--thank {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* ********* CARD STATE CLASS ********** */
+
+.hide {
+  display: none;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+  color: hsl(25, 97%, 53%);
+  font-family: "Overpass", sans-serif;
+}
